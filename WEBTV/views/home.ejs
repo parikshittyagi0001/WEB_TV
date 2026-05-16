@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTv - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="icon" href="logo.png"> -->
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div id="netflix-icon-container">
+                <img id="netflix-icon" src="pic.svg" alt="">
+            </div>
+            <div id="dropdown-signin-btn-container">
+                <select name="language-dropdown" class="language-dropdown">
+                    <option value="">Language</option>
+                    <option value="English">English</option>
+                </select>
+                <form action="http://localhost:3000/webtv/sign-in" method="get">
+                    <button type="submit" id="sign-in-btn">Sign In</button>
+                </form>
+            </div>
+        </nav>
+        <div id="main-container">
+            <div id="main-heading">
+                <h1 id="netflix-main-heading">Laughter. Tears. Thrills. Find it all on WebTv.</h1>
+            </div>
+            <div id="sub-heading">
+                <h3>Endless entertainment starts at just ₹ 149. Cancel anytime.</h3>
+            </div>
+            <div id="email-heading">
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            </div>
+            <div id="email-btn-container">
+                <form action="http://localhost:3000/webtv/newuser" method="post">
+                    <div id="email-box" class="form-floating">
+                        <input type="email" id="email-input" name="email" class="form-control" required placeholder="">
+                        <label for="email-input">Email address</label>
+                    </div>
+                    <button id="getstarted-btn">Get Started&nbsp;&nbsp;<i id="lessthanicon" class="fa-solid fa-greater-than" style="color: #ffffff;"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="page-2">
+        <div id="page-2-text-area">
+            <h1 id="page-2-text-area-main-heading">Enjoy on your TV</h1>
+            <p id="page-2-text-area-sub-heading">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div id="page-2-image-area">
+            <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video>
+            <img src="web-tv.png" alt="">
+        </div>
+    </div>
+    <div id="page-3">
+        <div id="page-3-image-area">
+            <img src="page-3.jpg" alt="">
+        </div>
+        <div id="page-3-text-area">
+            <h1 id="page-3-text-area-main-heading">Download your shows to watch offline</h1>
+            <p id="page-3-text-area-sub-heading">Save your favourites easily and always have something to watch.</p>
+        </div>
+    </div>
+    <div id="page-4">
+        <div id="page-4-text-area">
+            <h1 id="page-4-text-area-main-heading">Watch everywhere</h1>
+            <p id="page-4-text-area-sub-heading">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div id="page-4-image-area">
+            <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4"></video>
+            <img src="page-4.png" alt="">
+        </div>
+    </div>
+    <div id="page-5">
+        <div id="page-5-image-area">
+            <img src="page-5.png" alt="">
+        </div>
+        <div id="page-5-text-area">
+            <h1 id="page-5-text-area-main-heading">Create profiles for kids</h1>
+            <p id="page-5-text-area-sub-heading">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+    </div>
+    <div id="page-6">
+        <h1 id="page-6-main-heading">Frequently Asked Questions</h1>
+        <div id="page-6-question-1"><p>What is WebTv?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+        <div id="page-6-question-2"><p>How much does WebTv cost?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+        <div id="page-6-question-3"><p>Where can I watch?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+        <div id="page-6-question-4"><p>How do I cancel?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+        <div id="page-6-question-5"><p>What can I watch on WebTv?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+        <div id="page-6-question-6"><p>Is WebTv good for kids?</p><i class="fa-solid fa-plus" style="color: #fafafa;"></i></div>
+    </div>
+    <div id="page-7">
+        <table>
+            <tr>
+                <td colspan="4">Questions? Call <a href="#">000-800-919-1694</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">FAQ</a></td>
+                <td><a href="#">Help Centre</a></td>
+                <td><a href="#">Account</a></td>
+                <td><a href="#">Media Centre</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Investor Relations</a></td>
+                <td><a href="#">Jobs</a></td>
+                <td><a href="#">Way to Watch</a></td>
+                <td><a href="#">Terms of Use</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Privacy</a></td>
+                <td><a href="#">Cookie Preferences</a></td>
+                <td><a href="#">Corporate Information</a></td>
+                <td><a href="#">Contact Us</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Speed Test</a></td>
+                <td><a href="#">Legal Notices</a></td>
+                <td><a href="#">Only on WebTv</a></td>
+            </tr>
+            <tr>
+                <td id="dropdown-td" colspan="4">
+                    <select name="language-dropdown" class="language-dropdown">
+                        <option value="">Language</option>
+                        <option value="English">English</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">WebTv India</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

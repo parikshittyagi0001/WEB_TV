@@ -1,0 +1,63 @@
+/* Media Query for Mobile view */
+
+@media (max-width: 800px ) {
+    #container {
+        width: 70.5rem;
+        text-align: center;
+        height: 80vh;
+    }
+    #page-2 {
+        width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85vh;
+        padding-inline: 2rem;
+    }
+    #page-3 {
+        width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 85vh;
+        padding-inline: 2rem;
+    }
+    #page-4 {
+        width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85vh;
+        padding-inline: 2rem;
+    }
+    #page-5 {
+        width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85vh;
+        padding-inline: 2rem;
+    }
+    #page-6 {
+        width: 70.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 2rem;
+    }
+    #page-2-text-area, #page-3-text-area, #page-4-text-area, #page-5-text-area {
+        text-align: center;
+    }
+    #page-6-question-1,
+    #page-6-question-2,
+    #page-6-question-3,
+    #page-6-question-4,
+    #page-6-question-5,
+    #page-6-question-6 {
+        height: 6.5rem;
+    }
+    #page-7 {
+        width: 70.5rem;
+    }
+}

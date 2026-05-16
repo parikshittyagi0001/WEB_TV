@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTv - SignIn</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-image: url('/bg-img.png'); background-size: cover;">
+    <nav id="sign-in-navbar" class="">
+        <div class="img-nav-div" style="margin-left: 2rem;">
+            <a href="http://localhost:3000/webtv">
+                <img src="/pic.svg" alt="Netflix" width="180" height="80">
+            </a>
+        </div>
+    </nav>
+    <div class="sign-in-main-container">
+        <h1 style="color: aliceblue;">Sign In</h1>
+        <form action="http://localhost:3000/webtv/login" method="post">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button type="submit" style="font-weight: 600;" class="btn btn-danger btn-lg col-md-12">Sign In</button>
+        </form>
+        <div class="new-account-sign-up-container">
+            New to WebTv?
+            <form action="http://localhost:3000/webtv/newuser" method="post">
+                <button class="btn btn-danger btn-lg col-md-6" type="submit">Sign up now</button>
+            </form>
+        </div>
+    </div>
+    <div class="new-user-footer" style="background-color: black; opacity: 0.8; color: grey;">
+        <table>
+            <tr>
+                <td colspan="4">Questions? Call <a href="#">000-800-919-1694</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">FAQ</a></td>
+                <td><a href="#">Help Centre</a></td>
+                <td><a href="#">WebTv Shop</a></td>
+                <td><a href="#">Terms of Use</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Privacy</a></td>
+                <td><a href="#">Cookie Preferences</a></td>
+                <td><a href="#">Corporate Information</a></td>
+            </tr>
+            <tr>
+                <td id="dropdown-td" colspan="4">
+                    <select name="language-dropdown" class="language-dropdown">
+                        <option value="">Language</option>
+                        <option value="English">English</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
